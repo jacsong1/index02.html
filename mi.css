@@ -1,0 +1,326 @@
+/* 统一样式  开始*/
+
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+
+.container{
+    width:1226px;
+    margin: 0 auto;
+}
+
+.clearfix::after{
+    display:block;
+    content:"";
+    clear:both;
+}
+
+a:hover{
+    color:#ff6700;
+}
+
+
+/* 统一样式  结束*/
+
+/* 通用样式 开始 */
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+.hidden{
+    display:none;
+}
+
+.appear{
+    display:block;
+}
+
+.position{
+    position:relative;
+}
+
+/* 通用样式 结束 */
+
+/* 头部样式 开始 */
+
+.header{
+    font-size:12px;
+}
+
+.overcoat{
+    background:#333;
+    line-height: 40px;
+}
+
+.header .li{
+    display:inline-block;
+    padding-left:6px;
+    position: relative;
+    color:#b0b0b0;
+    font-weight:400;
+}
+
+.header .li .qrcode{
+    width:124px;
+    background:#fff;
+    position: absolute;
+    text-align:center;
+    font-size:14px;
+    line-height:1;
+    height:148px;
+    top:40px;
+    left:-53%;
+    box-shadow:0 1px 5px #333;
+    color:#333;
+    display:none;
+}
+
+.main .header .ul .none::after{
+    border:0;
+    content:"";
+}
+
+.header .download::after{
+    content:"";
+    border:none;
+    border-right:8px solid transparent;
+    border-left:8px solid transparent;
+    border-bottom:8px solid #fff;
+    position:absolute;
+    left:16px;
+    top:32px;
+    display:none;
+}
+
+.header .li .qrcode .img{
+    width:90px;
+    height:90px;
+    margin:18px auto 12px;
+    display:block;
+}
+
+.header .li .mi-header::after{
+    height:20px;
+    border-right:1px solid #424242;
+    content:"";
+    padding-left:5px;
+    margin:10px 0;
+}
+
+.header .li .mi-header:hover{
+    color:#fff;
+}
+
+.header .li:hover>.qrcode,.header .li:hover::after{
+    display:block;
+}
+
+.main .header .li a{
+    display:inline-block;
+}
+
+.header .left{
+    width:770px;
+    height:40px;
+}
+
+.header .right .cart{
+    position:absolute;
+    width:316px;
+    height:100px;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0, 0, 0, .15);
+    text-align:center;
+    right:0;
+    top:42px;
+    line-height:100px;
+    display:none;
+}
+
+.header .right .position:hover>.cart{
+    display:block;
+}
+
+.header .right .mome:hover{
+    color:#ff6700;
+}
+
+.header .right .mome{
+    width:140px;
+    text-align:center;
+}
+
+.header .right .position .icon-gouwuchekong{
+    width:20px;
+    height:20px;
+}
+
+.header .right .position .span{
+    margin-left:5px;
+}
+
+.header .right .position:hover{
+    background:#fff;
+}
+
+/* 头部样式 结束 */
+
+/* 导航栏 开始 */
+
+a:hover{
+    color:#ff6700;
+}
+
+.section .left .mi-logo{
+    background:url("../img/logo-mi2.png") no-repeat top left;
+    background-size:cover;
+    display:inline-block;
+    width:56px;
+    height:56px;
+    padding-top:56px;
+    box-sizing: border-box;
+    overflow:hidden;
+    margin-top:22px;
+    margin-right:150px;
+}
+
+.section .menu{
+    height:100px;
+}
+
+.section .menu .nav-item{
+    display:inline-block;
+}
+
+.section .menu .center{
+    overflow:hidden;
+    padding-top:10px;
+    line-height: 70px;
+    padding-left:20px;
+    box-sizing:border-box;
+    font-size:16px;
+}
+
+.section .menu .center .nav-item{
+    padding:6px;
+}
+
+.section .menu .right{
+    width:300px;
+    height:50px;
+    border:1px solid #b0b0b0;
+    line-height:50px;
+    margin-top:30px;
+}
+
+.section .menu .right input{
+    width:244px;
+    height:50px;
+    padding:3px;
+    box-sizing: border-box;
+    background:transparent;
+    padding-left:8px;
+}
+
+.section .menu .right .serch{
+    float:right;
+    width:50px;
+    height:50px;
+    border-left:1px solid #333;
+    font-size:30px;
+    text-align:center;
+}
+
+.section .menu .right .serch:hover{
+    background:#ff6700;
+    color:#fff;
+}
+
+.section .menu .pop .l-pop{
+    display:inline-block;
+    text-align:center;
+    font-size:12px;
+    position:relative;
+}
+
+.section .menu .pop .l-pop::after{
+    content:"";
+    border-left:2px solid #e0e0e0;
+    display:inline-block;
+    height:100px;
+    position:absolute;
+    right:0;
+    top:15px;
+}
+
+.section .menu .pop .l-pop:last-child::after{
+    border-left:0;
+}
+
+.section .menu .pop .l-pop img{
+    display:block;
+}
+
+.section .menu .pop .l-pop .span{
+    color:#ff6700;
+}
+.section .menu .pop .l-pop span{
+    line-height:20px;
+    display:block;
+}
+
+/* 导航栏 结束 */
+
+/* 商品栏 开始 */
+
+.container .main-menu .left {
+    width:234px;
+    height:460px;
+    background:rgba(105,101,101,.6);
+    position:relative;
+}
+
+.container .main-menu .left .p {
+    height:42px;
+    width:234px;
+    padding:0 0 0 30px;
+    box-sizing:border-box;
+    line-height:42px;
+}
+
+.container .main-menu .left .p:hover{
+    background:#ff6700;
+}
+
+.container .main-menu .left ul{
+    padding:20px 0;
+}
+
+.container .main-menu .left .span span{
+    vertical-align:90%;
+    font-size:14px;
+    display:inline-block;
+}
+
+.container .main-menu .left .span{
+    width:225px;
+    height:40px;
+    float:left;
+    padding:18px 20px;
+    
+}
+
+.container .main-menu .left .h-area{
+    position:absolute;
+    top:-10px;
+    left:234px;
+    height:460px;
+    width:990px;
+}
+
+/* 商品栏 结束 */
